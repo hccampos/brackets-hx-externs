@@ -1,0 +1,11 @@
+{
+    "name": "brackets-hx-externs",
+    "url": "http://github.com/hccampos/brackets-hx-externs",
+    "license": "MIT",
+    "tags": [ "brackets", "brackets.io", "externs", "extensions", "js" ],
+    "description": "Haxe externs for the Brackets editor (http://brackets.io).",
+    "version": "0.0.1",
+    "releasenote": "Initial test release - Still very incomplete. Pull requests welcome.",
+    "contributors": [ "hccampos" ],
+    "dependencies": {}
+}
