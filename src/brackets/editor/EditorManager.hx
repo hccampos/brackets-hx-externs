@@ -4,6 +4,9 @@ import brackets.document.Document;
 import brackets.utils.Range;
 import js.JQuery;
 
+/**
+ * @author Hugo Campos <hcfields@gmail.com> (www.hccampos.net)
+ */
 @:native("brackets_externs.editor.EditorManager")
 extern class EditorManager {
     private function new() { }

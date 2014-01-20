@@ -1,5 +1,8 @@
 package brackets.command;
 
+/**
+ * @author Hugo Campos <hcfields@gmail.com> (www.hccampos.net)
+ */
 @:native("brackets_externs.command.CommandManager")
 extern class CommandManager {
     private function new() { }

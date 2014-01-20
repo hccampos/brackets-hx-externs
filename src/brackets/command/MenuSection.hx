@@ -1,5 +1,8 @@
 package brackets.command;
 
+/**
+ * @author Hugo Campos <hcfields@gmail.com> (www.hccampos.net)
+ */
 @:native("brackets_externs.command.MenuSection")
 extern class MenuSection {
     private function new() { }

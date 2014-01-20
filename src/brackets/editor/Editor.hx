@@ -8,6 +8,9 @@ import brackets.utils.Selection;
 import js.html.HtmlElement;
 import js.JQuery;
 
+/**
+ * @author Hugo Campos <hcfields@gmail.com> (www.hccampos.net)
+ */
 @:native("brackets_externs.editor.Editor")
 extern class Editor {
     private function new() { }

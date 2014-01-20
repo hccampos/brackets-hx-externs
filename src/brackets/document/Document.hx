@@ -3,6 +3,9 @@ package brackets.document;
 import brackets.filesystem.File;
 import brackets.utils.CursorPos;
 
+/**
+ * @author Hugo Campos <hcfields@gmail.com> (www.hccampos.net)
+ */
 @:native("brackets_externs.document.Document")
 extern class Document {
     public function new() { }

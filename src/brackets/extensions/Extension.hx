@@ -12,16 +12,16 @@ import brackets.editor.EditorManager;
  */
 @:native("brackets_externs.extensions.Extension")
 class Extension implements IExtension {
-    private var _require:String->Dynamic;
-	public var module:Dynamic;
+    private var _require:Require;
+    private var _module:Module;
 
     /**
      * Constructor.
      */
-    public function new() {
-        Brackets.define(function (require:Require, exports:Exports, p_module:Module):Void {
+    public function new():Void {
+        Brackets.define(function (require:Require, exports:Exports, module:Module):Void {
             _require = require;
-			module = p_module;
+            _module = _module;
             initialize();
         });
     }
@@ -29,8 +29,7 @@ class Extension implements IExtension {
     /**
      * Initializes the extension. Required modules should be loaded here.
      */
-    public function initialize():Void {
-    }
+    public function initialize():Void {}
 
     /**
      * Requires a module from the extension's source tree.
@@ -43,4 +42,10 @@ class Extension implements IExtension {
     public function require(moduleName:String):Dynamic {
         return _require(moduleName);
     }
+    
+    /**
+     * The module of the extension.
+     */
+    public var module(get, never):Module;
+    private inline function get_module():Module { return _module; }
 }
