@@ -2,5 +2,9 @@ package brackets.filesystem;
 
 @:native("brackets_externs.filesystem.File")
 extern class File {
-    private function new() {}
+    public function new() { }
+	public function read(options:Dynamic, onCallback:Dynamic):Void
+	{
+		
+	}
 }
