@@ -13,13 +13,15 @@ import brackets.editor.EditorManager;
 @:native("brackets_externs.extensions.Extension")
 class Extension implements IExtension {
     private var _require:String->Dynamic;
+	public var module:Dynamic;
 
     /**
      * Constructor.
      */
     public function new() {
-        Brackets.define(function (require:Require, exports:Exports, module:Module):Void {
+        Brackets.define(function (require:Require, exports:Exports, p_module:Module):Void {
             _require = require;
+			module = p_module;
             initialize();
         });
     }
